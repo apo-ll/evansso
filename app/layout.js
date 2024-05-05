@@ -1,7 +1,7 @@
-import { Inter } from "next/font/google";
+import { GeistSans } from "geist/font/sans";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const geist = GeistSans({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Evans Maina",
@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${inter.className} antialiased bg-[#000101] min-h-screen`}
+        className={`${geist.className} antialiased bg-[#000101] min-h-screen`}
       >
         {children}
       </body>
