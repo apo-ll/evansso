@@ -7,10 +7,10 @@ export default function Home() {
     <main className="flex min-h-screen items-center lg:justify-center px-3 w-full  flex-col py-[40px]">
       <div className="flex flex-col max-w-[500px] gap-10">
         <div className="flex flex-col">
-          <h1 className="text-2xl font-semibold text-white mb-5">
+          <h1 className="lg:text-2xl text-lg sm:text-lg font-semibold text-white mb-5">
             Evans Maina
           </h1>
-          <p className="text-[#999794] text-2xl">
+          <p className="text-[#999794] lg:text-2xl text-lg sm:text-lg">
             Passionate about shaping the future of the web. Frontend developer
             with experience in React, Next.js, and Tailwind CSS. Let's build
             something amazing together! Also fueled by coffee and a desire to
