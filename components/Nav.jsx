@@ -24,7 +24,7 @@ export function Navbar() {
   ];
 
   return (
-    <div className="max-w-[500px] flex  mx-auto mt-[40px]">
+    <div className="max-w-[500px] lg:px-0 sm:px-3 px-3 flex  mx-auto mt-[40px]">
       <nav className=" gap-4 flex flex-row items-center text-white  ">
         {navigations.map((navs) => (
           <Link

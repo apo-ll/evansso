@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export function Footer() {
   return (
-    <footer className="max-w-[500px] flex  mx-auto my-[40px]">
+    <footer className="max-w-[500px] lg:px-0 sm:px-3 px-3 flex  mx-auto my-[40px]">
       <div className="flex flex-row gap-5">
         <Link
           href="https://github.com/apo-ll"
