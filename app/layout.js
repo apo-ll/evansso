@@ -1,5 +1,7 @@
 import { GeistSans } from "geist/font/sans";
 import "./globals.css";
+import { Navbar } from "@/components/Nav";
+import { Footer } from "@/components/Footer";
 
 export const metadata = {
   title: "Evans Maina",
@@ -10,9 +12,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${GeistSans.className} antialiased bg-[#000101] min-h-screen`}
+        className={`${GeistSans.className} antialiased bg-[#000101]  min-h-screen`}
       >
-        {children}
+        <Navbar />
+        <div className="flex items-center px-3 w-full  flex-col py-[40px]">
+          <div className="flex flex-col max-w-[500px] gap-10">{children}</div>
+        </div>
+        <Footer />
       </body>
     </html>
   );

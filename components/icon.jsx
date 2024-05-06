@@ -1,3 +1,16 @@
+import {
+  FaHtml5,
+  FaCss3Alt,
+  FaReact,
+  FaGitAlt,
+  FaGithub,
+} from "react-icons/fa";
+import { IoLogoJavascript } from "react-icons/io5";
+import { RiNextjsFill } from "react-icons/ri";
+import { SiAstro } from "react-icons/si";
+import { GoDotFill } from "react-icons/go";
+import { PaperPlaneIcon } from "@radix-ui/react-icons";
+
 export const Icons = {
   link: (...props) => (
     <svg
@@ -14,4 +27,14 @@ export const Icons = {
       ></path>
     </svg>
   ),
+  html: FaHtml5,
+  css: FaCss3Alt,
+  react: FaReact,
+  javascript: IoLogoJavascript,
+  git: FaGitAlt,
+  github: FaGithub,
+  next: RiNextjsFill,
+  astro: SiAstro,
+  dot: GoDotFill,
+  send: PaperPlaneIcon,
 };

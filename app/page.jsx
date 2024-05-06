@@ -26,13 +26,13 @@ export default function Home() {
 
   return (
     <motion.main
-      className="flex min-h-screen items-center lg:justify-center px-3 w-full  flex-col py-[40px]"
+      className=""
       initial={{ opacity: 0, y: 0 }}
       animate={{ opacity: 1, y: 0 }}
       style={{ perspective: "1200px" }}
     >
       <motion.div
-        className="flex flex-col max-w-[500px] gap-10"
+        className="flex flex-col gap-10"
         variants={containerVariants}
         initial="initial"
         animate="animate"
@@ -42,18 +42,17 @@ export default function Home() {
             Evans Maina
           </h1>
           <motion.p
-            className="lg:text-2xl text-[#999794] text-lg sm:text-lg"
+            className="lg:text-2xl text-p text-lg sm:text-lg"
             variants={itemVariants}
           >
             Passionate about shaping the future of the web. Frontend developer
             with experience in React, Next.js, and Tailwind CSS. Let's build
-            something amazing together! Also fueled by coffee and a desire to
-            learn.
+            something amazing together!
           </motion.p>
         </motion.div>
 
         <motion.div
-          className="flex flex-col text-[#999794] gap-5"
+          className="flex flex-col text-p gap-5"
           variants={itemVariants}
         >
           <h1 className="uppercase font-bold text-xs">projects</h1>
@@ -96,22 +95,18 @@ export default function Home() {
           </motion.div>
         </motion.div>
 
-        <motion.div className="flex flex-row gap-5" variants={itemVariants}>
+        <motion.div className="flex flex-col gap-5" variants={itemVariants}>
+          <h1 className="text-2xl font-semibold text-white">
+            Ready to start a project?
+          </h1>
+          <h1 className=" text-lg text-white">
+            Let's work together to achieve your goals.
+          </h1>
           <Link
-            href="https://github.com/apo-ll"
-            target="_blank"
-            className="flex flex-row gap-2 text-slate-300 hover:text-white transition duration-200 text-lg items-center *:hover:stroke-white"
+            href="/Contact"
+            className="bg-white text-black px-4 py-2 rounded-lg w-fit hover:bg-white/80 transition duration-200"
           >
-            <Icons.link className="stroke-gray-500" />
-            github
-          </Link>
-          <Link
-            href="https://twitter.com/apo_llonic"
-            target="_blank"
-            className="flex flex-row gap-2 text-slate-300 hover:text-white transition duration-200 text-lg items-center *:hover:stroke-white"
-          >
-            <Icons.link className="stroke-gray-500" />
-            twitter
+            contact
           </Link>
         </motion.div>
       </motion.div>
