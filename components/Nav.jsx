@@ -9,14 +9,17 @@ export function Navbar() {
     {
       name: "home",
       href: "/",
+      index: 1,
     },
     {
       name: "about",
       href: "/About",
+      index: 2,
     },
     {
       name: "contact",
       href: "/Contact",
+      index: 3,
     },
   ];
 
@@ -25,11 +28,12 @@ export function Navbar() {
       <nav className=" gap-4 flex flex-row items-center text-white  ">
         {navigations.map((navs) => (
           <Link
+            key={navs.index}
             href={navs.href}
             className={`${
               pathname === navs.href
                 ? "bg-white/50 py-[2px] px-2 rounded-lg"
-                : ""
+                : "bg-none"
             }`}
           >
             {navs.name}
